@@ -9,6 +9,7 @@
 # 17  18  19  11  12  13  14  15  16  17  18  19  10  11  12  13  # *0 _2     8
 
 module PrintTree
+  extend self
   def print_tree_graph(root)
     tree = tree_to_array root
     height = tree.length
@@ -71,7 +72,7 @@ module PrintTree
       end
     end
 
-    p result
+    result
   end
 
   def max_height(root)

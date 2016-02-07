@@ -1,8 +1,8 @@
 require_relative '../problem/90.rb'
 
 describe "Problem 90" do
-  it 'should return nil if argument is nil' do
-    expect(subsets_with_dup(nil)).to be_nil
+  it 'should return [] if argument is nil' do
+    expect(subsets_with_dup(nil)).to eq([])
   end
   it 'should return [] if argument is []' do
     expect(subsets_with_dup([])).to eq([[]])

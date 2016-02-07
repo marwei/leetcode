@@ -1,6 +1,7 @@
 require_relative 'tree_node'
 
 module BuildTree
+  extend self
   def build_tree_from_array(arr)
     _build_tree_from_array 0, arr 
   end
