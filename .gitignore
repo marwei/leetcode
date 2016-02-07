@@ -1,0 +1,4 @@
+/playground
+.DS_Store
+.rubocop.yml
+*.unfinished

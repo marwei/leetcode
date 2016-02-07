@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+
+def usage
+  usage =  
+"Usage:
+  leet <command> <filename>
+
+Commands:
+  C, Create \t Create solution file and test file
+  D, Delete \t Remove solution file and test file
+  T, Test   \t Run Rspec test for specified file"
+  puts usage
+end
+
+if ARGV.empty?
+  usage
+  exit 1
+end
+
+solution = "problem/#{ARGV[1]}.rb"
+test = "spec/#{ARGV[1]}_spec.rb"
+
+case ARGV[0].downcase
+when 'create', 'c'
+  %w{solution test}.each do |file|
+    puts "create new file #{eval(file)}"
+    File.open(eval(file), 'w')
+  end
+when 'delete', 'd'
+  %w{solution test}.each do |file|
+    puts "remove file #{eval(file)}"
+    File.delete(eval(file))
+  end
+when 'test', 't'
+  exec("rspec #{test}")
+else
+  usage
+end
