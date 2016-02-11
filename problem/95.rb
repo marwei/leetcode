@@ -1,4 +1,5 @@
 require_relative "../lib/tree.rb"
+
 # @param {Integer} n
 # @return {TreeNode[]}
 def generate_trees(n)
