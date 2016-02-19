@@ -17,7 +17,7 @@ start Guard `$ guard`
 ---
 create/remove/test files with `$ bin/leet <command> <filename>`
 
-e.g. 
+e.g.
 
 * `bin/leet create 100`  # create problem/100.rb and spec/100_spec.rb
 * `bin/leet delete 100`  # remove problem/100.rb and spec/100_spec.rb
@@ -155,3 +155,5 @@ Of course, if you find including individual files is a little annoying, just req
 [94]: https://github.com/marwei/leetcode/blob/master/problem/94.rb
 [95]: https://github.com/marwei/leetcode/blob/master/problem/95.rb
 [96]: https://github.com/marwei/leetcode/blob/master/problem/96.rb
+[51]: https://github.com/marwei/leetcode/blob/master/problem/51.rb
+[310]: https://github.com/marwei/leetcode/blob/master/problem/310.rb
