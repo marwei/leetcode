@@ -24,11 +24,16 @@ case ARGV[0].downcase
 when 'create', 'c'
   %w{solution test}.each do |file|
     puts "create new file #{eval(file)}"
-    File.open(eval(file), 'w')
+    if File.exist?(eval(file))
+      puts "#{eval(file)} already exist, override? ('Y' to confirm or any other key to cancel)"
+      File.open(eval(file), 'w') if STDIN.gets == 'Y'
+    else
+      File.open(eval(file), 'w')
+    end
   end
 when 'delete', 'd'
   %w{solution test}.each do |file|
-    puts "remove file #{eval(file)}"
+    puts "file #{eval(file)} removed"
     File.delete(eval(file))
   end
 when 'test', 't'
