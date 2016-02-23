@@ -40,18 +40,3 @@ def solve(board)
   end
   nil
 end
-
-board = ['XXXX',
-         'XOOX',
-         'XXOX',
-         'XOXX']
-
-# board = ['XXX', 
-#          'XOX', 
-#          'XXX']
-
-# board = ['O']
-
-solve(board)
-
-p board
