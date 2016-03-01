@@ -6,31 +6,61 @@ class ListNode
     @next = nil
   end
 
-  class << self
-    def new(*arg)
-      curr = nil
-      arg.each do |i|
-        curr.next = super(i)
+  def self.new(val)
+    if val.respond_to? :each
+      head = super(val[0])
+      curr = head
+      (1...val.size).each do |i|
+        curr.next = super(val[i])
         curr = curr.next
       end
-      curr.next = nil
-    end
-
-    # must give a block
-    def iterate(head)
-      while head
-        yield
-        head = head.next
-      end
-    end
-
-    def node_away_from(head, index)
-      node = head
-      while node && index > 0
-        node = node.next
-        index -= 1
-      end
-      node
+      head
+    else
+      super(val)
     end
   end
+
+  # must give a block
+  def map
+    cur = self
+    while cur
+      yield(cur)
+      cur = cur.next
+    end
+    self
+  end
+
+  def print_list
+    res = []
+    self.map do |n|
+      res << n.val
+    end
+    res.join('->').tap { |str| puts str }
+  end
+
+  def [](idx)
+    fr = self
+    idx.abs.times do
+      return nil unless fr
+      fr = fr.next
+    end
+    if idx < 0
+      res = self
+      while fr
+        res = res.next
+        fr = fr.next
+      end
+      res
+    else 
+      fr
+    end
+  end
+
+  def <<(node)
+    cur = self
+    cur = cur.next while cur.next
+    cur.next = node
+    nil
+  end
 end
+
