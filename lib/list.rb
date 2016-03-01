@@ -30,12 +30,12 @@ class ListNode
     self
   end
 
-  def print_list
+  def list_all
     res = []
     self.map do |n|
       res << n.val
     end
-    res.join('->').tap { |str| puts str }
+    res.tap { |str| puts str.join('->') }
   end
 
   def [](idx)
