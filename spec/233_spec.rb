@@ -13,4 +13,7 @@ describe "Problem 233" do
   it "returns 6 with 13" do
     expect(count_digit_one(13)).to eq(6)
   end
+  it "returns 140 with 200" do
+    expect(count_digit_one(200)).to eq(140)
+  end
 end

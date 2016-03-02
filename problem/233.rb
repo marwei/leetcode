@@ -5,7 +5,6 @@ def count_digit_one(n)
   a = 1
   b = 1
   while n > 0
-    p (n + 8) / 10 * a
     result += (n + 8) / 10 * a + (((n % 10 == 1) ? 1 : 0) * b)
     b += n % 10 * a
     a *= 10
