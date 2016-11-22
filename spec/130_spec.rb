@@ -1,6 +1,6 @@
-require_relative '../problem/150'
+require_relative '../problem/130'
 
-describe "Problem 150" do
+describe "Problem 130" do
   it "returns [] with input []" do
     board = []
     solve(board)
