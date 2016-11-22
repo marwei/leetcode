@@ -17,5 +17,3 @@ def length_of_longest_substring(s)
 
   longest_str.length
 end
-
-print length_of_longest_substring("pwwkew")
