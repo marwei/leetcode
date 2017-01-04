@@ -180,3 +180,4 @@ Of course, if you find including individual files is a little annoying, just req
 [331]: https://github.com/marwei/leetcode/blob/master/problem/331.rb
 [71]: https://github.com/marwei/leetcode/blob/master/problem/71.rb
 [5]: https://github.com/marwei/leetcode/blob/master/problem/5.rb
+[7]: https://github.com/marwei/leetcode/blob/master/problem/7.rb
