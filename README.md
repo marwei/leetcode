@@ -181,3 +181,5 @@ Of course, if you find including individual files is a little annoying, just req
 [71]: https://github.com/marwei/leetcode/blob/master/problem/71.rb
 [5]: https://github.com/marwei/leetcode/blob/master/problem/5.rb
 [7]: https://github.com/marwei/leetcode/blob/master/problem/7.rb
+[442]: https://github.com/marwei/leetcode/blob/master/problem/442.rb
+[1]: https://github.com/marwei/leetcode/blob/master/problem/1.rb

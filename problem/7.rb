@@ -9,5 +9,3 @@ def reverse(x)
   end
   sum
 end
-
-print reverse 1234
