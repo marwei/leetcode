@@ -60,7 +60,7 @@ class ListNode
     cur = self
     cur = cur.next while cur.next
     cur.next = node
-    nil
+    self
   end
 end
 
