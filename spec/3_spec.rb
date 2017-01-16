@@ -1,6 +1,6 @@
-require_relative("../problem/5")
+require_relative("../problem/3")
 
-describe "Problem 5" do
+describe "Problem 3" do
   it "should return 0 for input ''" do
     expect(length_of_longest_substring("")).to be 0
   end
