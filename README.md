@@ -121,6 +121,9 @@ Of course, if you find including individual files is a little annoying, just req
 |[441]|[442]|[443]|[444]|[445]|[446]|[447]|[448]|[449]|[450]|
 |[451]|[452]|[453]|[454]|[455]|[456]|[457]|[458]|[459]|[460]|
 |[461]|[462]|[463]|[464]|[465]|[466]|[467]|[468]|[469]|[470]|
+|[471]|[472]|[473]|[474]|[475]|[476]|[477]|[478]|[479]|[480]|
+|[481]|[482]|[483]|[484]|[485]|[486]|[487]|[488]|[489]|[490]|
+|[491]|[492]|[493]|[494]|[495]|[496]|[497]|[498]|[499]|[500]|
 
 ## Todo
 ---
@@ -200,3 +203,4 @@ Of course, if you find including individual files is a little annoying, just req
 [3]: https://github.com/marwei/leetcode/blob/master/problem/3.rb
 [461]: https://github.com/marwei/leetcode/blob/master/problem/461.rb
 [463]: https://github.com/marwei/leetcode/blob/master/problem/463.rb
+[485]: https://github.com/marwei/leetcode/blob/master/problem/485.rb
